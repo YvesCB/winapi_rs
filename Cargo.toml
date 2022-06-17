@@ -2,7 +2,18 @@
 name = "winapi_rs"
 version = "0.1.0"
 edition = "2021"
+license = "MIT"
+author = "Yves Bruckmayer <yves@bruckmayer.ch>"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
-[dependencies]
+[dependencies.windows]
+version = "0.37.0"
+features = [
+  "alloc",
+  "Win32_Foundation",
+  "Win32_Graphics_Gdi",
+  "Win32_System_Memory",
+  "Win32_System_LibraryLoader",
+  "Win32_UI_WindowsAndMessaging",
+]
